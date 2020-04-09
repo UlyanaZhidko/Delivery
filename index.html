@@ -1,58 +1,64 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delivery Food</title>
-    <link 
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" 
-      rel="stylesheet">
-    <link rel="stylesheet" href="css\normalize.css">
-    <link rel="stylesheet" href="css\style.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery Food</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css\normalize.css">
+  <link rel="stylesheet" href="css\style.css">
 </head>
+
 <body>
   <div class="container">
     <!--Шапка сайта-->
     <header class="header">
-      <img src="img\logo.svg" alt="logo" class="logo">
-        <input type="search" class="input input-address" placeholder="Адрес доставки">
-          <div class="buttons">
-            <button class="button button-primary">
-              <img src="img\user.svg" alt="user" class="button-icon">
-                <span class="button-text">Войти</span> 
-            </button>
-            <button class="button">
-              <img src="img\buy.svg" alt="buy" class="button-icon">
-                <span class="button-text">Корзина</span>
-            </button>
-          </div>
-    </header>
-
-    <!--Тело сайта-->
-    <section class="main">
-      <h1 class="main-title">Онлайн-сервис <br> доставки еды на дом</h1>
-      <p class="main-text">
-        Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком
-      </p>
-    </section>
-
-    <section class="restaurants">
-      <div class="section-heading">
-        <h2 class="section-title">Рестораны</h2>
-        <input type="text" class=" input input-search" placeholder="Поиск блюд и ресторанов">
+      <a href="index.html" class="logo">
+       <img src="img\logo.svg" alt="logo"> 
+      </a>
+      <input type="search" class="input input-address" placeholder="Адрес доставки">
+      <div class="buttons">
+        <button class="button button-primary">
+          <img src="img\user.svg" alt="user" class="button-icon">
+          <span class="button-text">Войти</span>
+        </button>
+        <button class="button">
+          <img src="img\buy.svg" alt="buy" class="button-icon">
+          <span class="button-text">Корзина</span>
+        </button>
       </div>
-     <!--Карточки-->
-      <div class="cards">
-        <!--Карточкa-->
-        <div class="card">
-          <img src="img\image.jpg" alt="image" class="card-img">
-          <!--Карточкa text-->
-          <div class="card-text">
-            <!--Карточкa heading-->
-            <div class="card-heading">
-              <h3 class="card-title">Пицца плюс</h3>
-              <span class="card-tag tag">50 мин</span>
-            </div> <!--Карточкa heading-->
+    </header>
+  </div>
+
+  <!--Тело сайта-->
+  <main class="base">
+    <div class="container">
+      <section class="main">
+        <h1 class="main-title">Онлайн-сервис <br> доставки еды на дом</h1>
+        <p class="main-text">
+          Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком
+        </p>
+      </section>
+
+      <section class="restaurants">
+        <div class="section-heading">
+          <h2 class="section-title">Рестораны</h2>
+          <input type="text" class=" input input-search" placeholder="Поиск блюд и ресторанов">
+        </div>
+        <!--Карточки-->
+        <div class="cards">
+          <!--Карточкa-->
+          <a href="restaurant.html" class="card">
+            <img src="img\image.jpg" alt="image" class="card-img">
+            <!--Карточкa text-->
+            <div class="card-text">
+              <!--Карточкa heading-->
+              <div class="card-heading">
+                <h3 class="card-title">Пицца плюс</h3>
+                <span class="card-tag tag">50 мин</span>
+              </div>
+              <!--Карточкa heading-->
               <!--Карточкa инфо-->
               <div class="card-info">
                 <div class="reating">
@@ -60,61 +66,68 @@
                   4.5</div>
                 <div class="price">От 900 ₽</div>
                 <div class="category">Пицца</div>
-              </div> <!--Карточкa info-->
-          </div> <!--Карточкa text-->
-        </div> <!--Карточкa-->
+              </div>
+              <!--Карточкa info-->
+            </div>
+            <!--Карточкa text-->
+          </a> <!--/Карточкa-->
 
-        <!--Карточкa-->
-        <div class="card">
-          <img src="img\image1.jpg" alt="image" class="card-img">
-          <!--Карточкa text-->
-          <div class="card-text">
-            <!--Карточкa heading-->
-            <div class="card-heading">
-              <h3 class="card-title">Тануки</h3>
-              <span class="card-tag tag">40 мин</span>
-            </div> <!--Карточкa heading-->
+          <!--Карточкa-->
+          <a href="restaurant1.html" class="card">
+            <img src="img\image1.jpg" alt="image" class="card-img">
+            <!--Карточкa text-->
+            <div class="card-text">
+              <!--Карточкa heading-->
+              <div class="card-heading">
+                <h3 class="card-title">Тануки</h3>
+                <span class="card-tag tag">30 мин</span>
+              </div> <!--/Карточкa heading-->
               <!--Карточкa инфо-->
               <div class="card-info">
                 <div class="reating">
                   <img src="img/star.svg" alt="star" class="reating-star">
                   4</div>
-                <div class="price">От 700 ₽</div>
-                <div class="category">Пицца</div>
-              </div> <!--Карточкa info-->
-          </div> <!--Карточкa text-->
-        </div> <!--Карточкa-->
+                <div class="price">От 250 ₽</div>
+                <div class="category">Суши, роллы</div>
+              </div> <!--/Карточкa info-->
+            </div>  <!--/Карточкa text-->
+          </a> <!--/Карточкa-->
 
-                <!--Карточкa-->
-                <div class="card">
-                  <img src="img\image2.jpg" alt="image" class="card-img">
-                  <!--Карточкa text-->
-                  <div class="card-text">
-                    <!--Карточкa heading-->
-                    <div class="card-heading">
-                      <h3 class="card-title">FoodBand</h3>
-                      <span class="card-tag tag">50 мин</span>
-                    </div> <!--Карточкa heading-->
-                      <!--Карточкa инфо-->
-                      <div class="card-info">
-                        <div class="reating">
-                          <img src="img/star.svg" alt="star" class="reating-star">
-                          4.5</div>
-                        <div class="price">От 600 ₽</div>
-                        <div class="category">Пицца</div>
-                      </div> <!--Карточкa info-->
-                  </div> <!--Карточкa text-->
-                </div> <!--Карточкa-->
-                        <!--Карточкa-->
-        <div class="card">
-          <img src="img\image3.jpg" alt="image" class="card-img">
-          <!--Карточкa text-->
-          <div class="card-text">
-            <!--Карточкa heading-->
-            <div class="card-heading">
-              <h3 class="card-title">Жадина-пицца</h3>
-              <span class="card-tag tag">40 мин</span>
-            </div> <!--Карточкa heading-->
+          <!--Карточкa-->
+          <a href="#" class="card">
+            <img src="img\image2.jpg" alt="image" class="card-img">
+            <!--Карточкa text-->
+            <div class="card-text">
+              <!--Карточкa heading-->
+              <div class="card-heading">
+                <h3 class="card-title">FoodBand</h3>
+                <span class="card-tag tag">50 мин</span>
+              </div>
+              <!--Карточкa heading-->
+              <!--Карточкa инфо-->
+              <div class="card-info">
+                <div class="reating">
+                  <img src="img/star.svg" alt="star" class="reating-star">
+                  4.5</div>
+                <div class="price">От 600 ₽</div>
+                <div class="category">Пицца</div>
+              </div>
+              <!--Карточкa info-->
+            </div>
+            <!--Карточкa text-->
+          </a> <!--/Карточкa-->
+          
+          <!--Карточкa-->
+          <a href="#" class="card">
+            <img src="img\image3.jpg" alt="image" class="card-img">
+            <!--Карточкa text-->
+            <div class="card-text">
+              <!--Карточкa heading-->
+              <div class="card-heading">
+                <h3 class="card-title">Жадина-пицца</h3>
+                <span class="card-tag tag">40 мин</span>
+              </div>
+              <!--Карточкa heading-->
               <!--Карточкa инфо-->
               <div class="card-info">
                 <div class="reating">
@@ -122,39 +135,47 @@
                   3.5</div>
                 <div class="price">От 600 ₽</div>
                 <div class="category">Пицца</div>
-              </div> <!--Карточкa info-->
-          </div> <!--Карточкa text-->
-        </div> <!--Карточкa-->
-                <!--Карточкa-->
-                <div class="card">
-                  <img src="img\image4.jpg" alt="image" class="card-img">
-                  <!--Карточкa text-->
-                  <div class="card-text">
-                    <!--Карточкa heading-->
-                    <div class="card-heading">
-                      <h3 class="card-title">Точка еды</h3>
-                      <span class="card-tag tag">30 мин</span>
-                    </div> <!--Карточкa heading-->
-                      <!--Карточкa инфо-->
-                      <div class="card-info">
-                        <div class="reating">
-                          <img src="img/star.svg" alt="star" class="reating-star">
-                          5</div>
-                        <div class="price">От 300 ₽</div>
-                        <div class="category">Пицца</div>
-                      </div> <!--Карточкa info-->
-                  </div> <!--Карточкa text-->
-                </div> <!--Карточкa-->
-                        <!--Карточкa-->
-        <div class="card">
-          <img src="img\image5.jpg" alt="image" class="card-img">
-          <!--Карточкa text-->
-          <div class="card-text">
-            <!--Карточкa heading-->
-            <div class="card-heading">
-              <h3 class="card-title">PizzaBurger</h3>
-              <span class="card-tag tag">20 мин</span>
-            </div> <!--Карточкa heading-->
+              </div>
+              <!--Карточкa info-->
+            </div>
+            <!--Карточкa text-->
+          </a> <!--/Карточкa-->
+         
+          <!--Карточкa-->
+          <a href="#" class="card">
+            <img src="img\image4.jpg" alt="image" class="card-img">
+            <!--Карточкa text-->
+            <div class="card-text">
+              <!--Карточкa heading-->
+              <div class="card-heading">
+                <h3 class="card-title">Точка еды</h3>
+                <span class="card-tag tag">30 мин</span>
+              </div>
+              <!--Карточкa heading-->
+              <!--Карточкa инфо-->
+              <div class="card-info">
+                <div class="reating">
+                  <img src="img/star.svg" alt="star" class="reating-star">
+                  5</div>
+                <div class="price">От 300 ₽</div>
+                <div class="category">Пицца</div>
+              </div>
+              <!--Карточкa info-->
+            </div>
+            <!--Карточкa text-->
+          </a>  <!--/Карточкa-->
+        
+          <!--Карточкa-->
+          <a href="#" class="card">
+            <img src="img\image5.jpg" alt="image" class="card-img">
+            <!--Карточкa text-->
+            <div class="card-text">
+              <!--Карточкa heading-->
+              <div class="card-heading">
+                <h3 class="card-title">PizzaBurger</h3>
+                <span class="card-tag tag">20 мин</span>
+              </div>
+              <!--Карточкa heading-->
               <!--Карточкa инфо-->
               <div class="card-info">
                 <div class="reating">
@@ -162,18 +183,43 @@
                   3</div>
                 <div class="price">От 200 ₽</div>
                 <div class="category">Пицца</div>
-              </div> <!--Карточкa info-->
-          </div> <!--Карточкa text-->
-        </div> <!--Карточкa-->
-      </div>  <!--Карточки-->
-    </section>
-  </div>
+              </div>
+              <!--Карточкa info-->
+            </div>
+            <!--Карточкa text-->
+          </a>  <!--/Карточкa-->
+          
+        </div>
+        <!--Карточки-->
+      </section>
+    </div>
+  </main>
+
+  <!--Подвал сайта-->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-block">
+        <a href="index.html" class="logo footer-logo">
+          <img src="img\logo.svg" alt="logo"> 
+        </a>
+        <nav class="footer-nav">
+          <a href="#" class="footer-link">Ресторанам</a>
+          <a href="#" class="footer-link">Курьерам</a>
+          <a href="#" class="footer-link">Пресс-центр</a>
+          <a href="#" class="footer-link">Контакты</a>
+        </nav>
+        <div class="social-links">
+          <a href="#" class="social-links"><img src="img\inst.svg" alt="instagram"></a>
+          <a href="#" class="social-links"><img src="img\facebook.svg" alt="facebook"></a>
+          <a href="#" class="social-links"><img src="img\vk.svg" alt="vk"></a>
+        </div>
+      </div>
+    </div>
 
 
-   
 
-
-
+  </footer>
 
 </body>
+
 </html>
