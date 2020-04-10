@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+.card-title{
+    color:black;
+}
+.card-title:active {
+    color:#FFC107;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     padding-top: 44px;
@@ -42,11 +49,18 @@ body {
     flex: 0.8;
     background-image: url(../img/home.svg);
 }
+.input-address:focus {
+    border-color:  #FFC107;
+}
 
 .input-search {
     width: 300px;
     background-image: url(../img/search.svg);
     margin-left: auto;
+}
+
+.input-search:focus {
+    border-color:  #FFC107;
 }
 
 .buttons {
@@ -582,4 +596,19 @@ body {
     .input-search {
         width: 100%;
     }
+    .food-price {
+        margin-left: auto;
+        margin-right: 10px;
+        font-weight: bold;
+        line-height: 32px;
+    }
+    .modal-pricetag {
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    .button-primary {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
 }
