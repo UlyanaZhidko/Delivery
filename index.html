@@ -7,11 +7,12 @@
   <title>Delivery Food</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css\normalize.css">
+  <link rel="stylesheet" href="css\animate.css">
   <link rel="stylesheet" href="css\style.css">
 </head>
 
 <body>
-  <div class="container">
+  <div class="container wow slideInDown">
     <!--Шапка сайта-->
     <header class="header">
       <a href="index.html" class="logo">
@@ -23,7 +24,7 @@
           <img src="img\user.svg" alt="user" class="button-icon">
           <span class="button-text">Войти</span>
         </button>
-        <button class="button">
+        <button class="button" id="cart-button">
           <img src="img\buy.svg" alt="buy" class="button-icon">
           <span class="button-text">Корзина</span>
         </button>
@@ -34,7 +35,7 @@
   <!--Тело сайта-->
   <main class="base">
     <div class="container">
-      <section class="main">
+      <section class="main wow pulse">
         <h1 class="main-title">Онлайн-сервис <br> доставки еды на дом</h1>
         <p class="main-text">
           Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком
@@ -49,7 +50,7 @@
         <!--Карточки-->
         <div class="cards">
           <!--Карточкa-->
-          <a href="restaurant.html" class="card">
+          <a href="restaurant.html" class="card wow fadeInUp" data-wow-delay="0.2s">
             <img src="img\image.jpg" alt="image" class="card-img">
             <!--Карточкa text-->
             <div class="card-text">
@@ -73,7 +74,7 @@
           </a> <!--/Карточкa-->
 
           <!--Карточкa-->
-          <a href="restaurant1.html" class="card">
+          <a href="restaurant1.html" class="card wow fadeInUp" data-wow-delay="0.4s">
             <img src="img\image1.jpg" alt="image" class="card-img">
             <!--Карточкa text-->
             <div class="card-text">
@@ -94,7 +95,7 @@
           </a> <!--/Карточкa-->
 
           <!--Карточкa-->
-          <a href="#" class="card">
+          <a href="#" class="card wow fadeInUp" data-wow-delay="0.6s">
             <img src="img\image2.jpg" alt="image" class="card-img">
             <!--Карточкa text-->
             <div class="card-text">
@@ -118,7 +119,7 @@
           </a> <!--/Карточкa-->
           
           <!--Карточкa-->
-          <a href="#" class="card">
+          <a href="#" class="card wow fadeInUp" data-wow-delay="0.2s">
             <img src="img\image3.jpg" alt="image" class="card-img">
             <!--Карточкa text-->
             <div class="card-text">
@@ -142,7 +143,7 @@
           </a> <!--/Карточкa-->
          
           <!--Карточкa-->
-          <a href="#" class="card">
+          <a href="#" class="card wow fadeInUp" data-wow-delay="0.4s">
             <img src="img\image4.jpg" alt="image" class="card-img">
             <!--Карточкa text-->
             <div class="card-text">
@@ -166,7 +167,7 @@
           </a>  <!--/Карточкa-->
         
           <!--Карточкa-->
-          <a href="#" class="card">
+          <a href="#" class="card wow fadeInUp" data-wow-delay="0.6s">
             <img src="img\image5.jpg" alt="image" class="card-img">
             <!--Карточкa text-->
             <div class="card-text">
@@ -197,7 +198,7 @@
 
   <!--Подвал сайта-->
   <footer class="footer">
-    <div class="container">
+    <div class="container wow slideInUp">
       <div class="footer-block">
         <a href="index.html" class="logo footer-logo">
           <img src="img\logo.svg" alt="logo"> 
@@ -215,11 +216,65 @@
         </div>
       </div>
     </div>
-
-
-
   </footer>
 
-</body>
+<!--Корзина-->
+<div class="modal">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h3 class="modal-title">Корзина</h3>
+      <button class="close">&times;</button>
+    </div> <!--/Heder-->
+    <div class="modal-body">
+      <div class="food-row">
+        <span class="food-name">4 сезона</span>
+        <strong class="food-price">8,90 руб.</strong>
+        <div class="food-counter">
+          <button class="counter-button">-</button>
+          <span class="counter">1</span>
+          <button class="counter-button">+</button>
+        </div><!--/food-counter-->
+      </div><!--/food-row-->
+      <div class="food-row">
+        <span class="food-name">4 сезона</span>
+        <strong class="food-price">8,90 руб.</strong>
+        <div class="food-counter">
+          <button class="counter-button">-</button>
+          <span class="counter">1</span>
+          <button class="counter-button">+</button>
+        </div><!--/food-counter-->
+      </div><!--/food-row-->
+      <div class="food-row">
+        <span class="food-name">4 сезона</span>
+        <strong class="food-price">8,90 руб.</strong>
+        <div class="food-counter">
+          <button class="counter-button">-</button>
+          <span class="counter">1</span>
+          <button class="counter-button">+</button>
+        </div><!--/food-counter-->
+      </div><!--/food-row-->
+      <div class="food-row">
+        <span class="food-name">4 сезона</span>
+        <strong class="food-price">8,90 руб.</strong>
+        <div class="food-counter">
+          <button class="counter-button">-</button>
+          <span class="counter">1</span>
+          <button class="counter-button">+</button>
+        </div><!--/food-counter-->
+      </div><!--/food-row-->
+    </div><!--/modal-body-->
+    <div class="modal-footer">
+      <span class="modal-pricetag">8,90 руб.</span>
+      <div class="footer-buttons">
+        <button class="button button-primary">Оформить заказ</button>
+        <button class="button">Отмена</button>
+      </div>
+    </div><!--/modal-footer-->
+  </div> <!--/modal-dialog-->
+</div> <!--/Корзина-->
 
+  <script src="js\wow.min.js"></script>
+ <script src="js\main.js"></script>
+  
+</body>
 </html>
