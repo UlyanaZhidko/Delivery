@@ -611,4 +611,41 @@ body {
         line-height: 20px;
     }
 }
+
+@media (max-width: 400px) {
+    .food-name {
+        font-size: 14px;
+        line-height: 32px;
+        white-space: nowrap;
+        margin-top: 20px;
+    }
+    .food-price {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .counter-button {
+        width: 30px;
+        height: 25px;
+    }
+    .food-counter {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .modal-pricetag {
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+    .button {
+        min-height: 40px;
+        font-size: 12px;
+    }
+    .button-primary {
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    
+}
 }
